@@ -4,15 +4,20 @@
 
 body {
   background-image: url(images/ShinyMonster.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-top: 56px;
+  background-size: cover;
+  background-position: center;
+  padding: 56px 0;
+  font-family: "Red Hat Mono", monospace;
+  line-height: 16px;
+  letter-spacing: 0.25em;
 }
 
 .navbar {
   background-color: transparent !important;
   border-color: transparent !important;
-  margin: 50px 50px 0 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 81.5%;
 }
 .navbar-nav .nav-link {
   color: white !important;
@@ -23,7 +28,7 @@ body {
   height: 22px;
 }
 .container {
-  width: 1280px;
+  width: 80%;
   height: 669px;
   border: var(--border);
 }
@@ -35,5 +40,4 @@ body {
 p {
   color: white;
   font-size: 10px;
-  line-height: 2;
 }
