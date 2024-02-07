@@ -31,13 +31,26 @@ body {
   width: 80%;
   height: 669px;
   border: var(--border);
+  margin-top: -8px;
 }
 .frameOne {
-  width: 551px;
+  width: 49%;
   padding: 0px 32px;
-  margin: 45px 0 0 15px;
+  margin: 45px 0 0 10px;
+}
+p,
+footer {
+  color: white;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 10px;
 }
 p {
-  color: white;
-  font-size: 10px;
+  line-height: 19px;
+}
+footer {
+  margin: 8px auto;
+  width: 80%;
+
+  line-height: 15px;
 }
