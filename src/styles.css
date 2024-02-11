@@ -1,5 +1,6 @@
 :root {
   --border: 0.5px solid white;
+  --linkColor: #fd89b3;
 }
 
 body {
@@ -17,26 +18,31 @@ body {
   border-color: transparent !important;
   margin-left: auto;
   margin-right: auto;
-  width: 81.5%;
+  width: 71.5%;
 }
 .navbar-nav .nav-link {
   color: white !important;
   font-size: 12px;
+  margin-bottom: -5px;
 }
 .shpLogo {
   width: 227px;
   height: 22px;
 }
 .container {
-  width: 80%;
-  height: 669px;
+  width: 70%;
+  height: 500px;
   border: var(--border);
-  margin-top: -8px;
+  margin-top: -5px;
 }
 .frameOne {
   width: 49%;
   padding: 0px 32px;
   margin: 45px 0 0 10px;
+}
+
+.nav-link:hover {
+  color: var(--linkColor);
 }
 p,
 footer {
@@ -50,7 +56,6 @@ p {
 }
 footer {
   margin: 8px auto;
-  width: 80%;
-
+  width: 70%;
   line-height: 15px;
 }
