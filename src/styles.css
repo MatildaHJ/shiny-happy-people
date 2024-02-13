@@ -7,12 +7,14 @@ body {
   background-image: url(images/ShinyMonster.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  height: 900px;
   font-family: "Red Hat Mono", monospace;
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
 .container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -76,11 +78,9 @@ h2 {
   padding: 0px 32px;
   margin: 45px 0 0 10px;
 }
-.frameOne,
-.frameThree {
-  width: 53%;
-}
+
 .frameOne {
+  width: 48%;
   height: 77%;
 }
 
@@ -88,10 +88,13 @@ h2 {
   font-size: 8px;
   line-height: 14px;
   margin-left: 15px;
-  width: 39%;
+  width: 35%;
+}
+.frameThree {
+  width: 42%;
 }
 .frameFour {
-  width: 45%;
+  width: 37%;
 }
 form,
 .btn {
@@ -101,7 +104,7 @@ form,
   letter-spacing: 0.25em;
 }
 form {
-  width: 35%;
+  width: 30%;
   margin-left: 45px;
 }
 .btn {
