@@ -8,8 +8,8 @@ body {
   background-size: cover;
   background-position: center;
   font-family: "Red Hat Mono", monospace;
-  line-height: 16px;
   letter-spacing: 0.25em;
+  text-transform: uppercase;
 }
 .container {
   width: 70%;
@@ -30,7 +30,6 @@ body {
   color: white !important;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.25em;
 }
 .nav-item {
   margin-bottom: -10px;
@@ -45,31 +44,87 @@ body {
   height: 500px;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: var(--linkColor) !important;
+}
+h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin: 5px 0;
+}
+h3 {
+  font-weight: 700;
+  font-size: 10px;
+  color: white;
 }
 p,
 footer {
   color: white;
   letter-spacing: 0.25em;
-  text-transform: uppercase;
   font-size: 10px;
 }
-p {
+p,
+h2 {
   line-height: 19px;
 }
-.frameOne {
-  width: 49%;
-  height: 77%;
+
+.frameOne,
+.frameThree,
+.frameFour {
   padding: 0px 32px;
   margin: 45px 0 0 10px;
 }
+.frameOne,
+.frameThree {
+  width: 53%;
+}
+.frameOne {
+  height: 77%;
+}
 
-.fineLine {
+.frameTwo {
   font-size: 8px;
   line-height: 14px;
   margin-left: 15px;
   width: 39%;
+}
+.frameFour {
+  width: 45%;
+}
+form,
+.btn {
+  font-size: 8px;
+  line-height: 14px;
+  color: white;
+  letter-spacing: 0.25em;
+}
+form {
+  width: 35%;
+  margin-left: 45px;
+}
+.btn {
+  text-transform: uppercase;
+  margin: 20px 0 0 -12px;
+}
+.form-control {
+  padding: 10px;
+  height: 35px;
+  color: white !important;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: none !important;
+}
+.no-background {
+  background-color: transparent !important;
+  border: none;
+  border-bottom: var(--border);
+  border-radius: 0;
 }
 footer {
   margin: 8px auto;
