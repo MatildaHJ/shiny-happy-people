@@ -8,15 +8,22 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 900px;
+  height: 100vh;
   font-family: "Red Hat Mono", monospace;
   letter-spacing: 0.25em;
   text-transform: uppercase;
+  overflow: hidden;
 }
 .container {
   width: 80%;
+  height: 55%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+.main {
+  width: 100%;
+  height: 70vh;
+  border: var(--border);
 }
 .navbar {
   background-color: transparent !important;
@@ -39,11 +46,6 @@ body {
 .shpLogo {
   width: 227px;
   height: 22px;
-}
-.main {
-  width: 100%;
-  border: var(--border);
-  height: 500px;
 }
 
 .nav-link:hover,
@@ -71,12 +73,16 @@ p,
 h2 {
   line-height: 19px;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
 
 .frameOne,
 .frameThree,
 .frameFour {
   padding: 0px 32px;
-  margin: 45px 0 0 10px;
+  margin: 35px 0 0 10px;
 }
 
 .frameOne {
@@ -129,8 +135,29 @@ form {
   border-bottom: var(--border);
   border-radius: 0;
 }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
 footer {
   margin: 8px auto;
-
   line-height: 15px;
+}
+@media (max-width: 1050px) {
+  .container {
+    width: 83%;
+    margin-top: 80px;
+  }
+  .main {
+    height: 72vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 95%;
+    margin-top: 30px;
+  }
+  .main {
+    height: 72vh;
+  }
 }
