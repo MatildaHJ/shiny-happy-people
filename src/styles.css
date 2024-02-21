@@ -37,7 +37,6 @@ body {
   height: 60px;
   padding-top: 30px;
 }
-
 .navbar-nav .nav-link {
   color: white !important;
   font-size: 12px;
@@ -50,10 +49,23 @@ body {
   width: 227px;
   height: 22px;
 }
-
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
   color: var(--linkColor) !important;
+}
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  margin-right: -7px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler-icon:active {
+  outline: none;
+  border: 0;
+  box-shadow: none;
 }
 h2 {
   font-size: 14px;
@@ -61,11 +73,7 @@ h2 {
   color: white;
   margin: 5px 0;
 }
-h3 {
-  font-weight: 700;
-  font-size: 10px;
-  color: white;
-}
+
 p,
 footer {
   color: white;
@@ -76,6 +84,9 @@ p,
 h2 {
   line-height: 19px;
 }
+p.personer {
+  margin-bottom: 25px;
+}
 a {
   color: white;
   text-decoration: none;
@@ -84,8 +95,7 @@ a {
 .frameOne,
 .frameThree,
 .frameFour {
-  padding: 0px 32px;
-  margin: 35px 0 0 10px;
+  padding: 35px 42px 0 42px;
 }
 
 .frameOne,
@@ -116,7 +126,6 @@ form,
   color: white;
   letter-spacing: 0.25em;
 }
-
 .btn {
   text-transform: uppercase;
   margin: 20px 0 0 -12px;
@@ -127,7 +136,6 @@ form,
   color: white !important;
   font-size: 14px;
 }
-
 .form-control:focus {
   border-color: #80bdff;
   outline: 0;
@@ -139,13 +147,14 @@ form,
   border-bottom: var(--border);
   border-radius: 0;
 }
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  margin-right: -7px;
-}
+
 footer {
   margin: 8px auto;
+  font-size: 10px;
   line-height: 15px;
+}
+.footer-content {
+  display: flex;
 }
 @media (max-width: 1050px) {
   .container {
@@ -154,18 +163,87 @@ footer {
   }
   .main {
     height: 72vh;
+    grid-template-columns: 3fr 1fr;
+  }
+  .navbar-nav {
+    margin-top: 15px;
+  }
+  .navbar-nav .nav-link {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+  }
+  p {
+    font-size: 11px;
+  }
+  .frameOne,
+  .frameThree,
+  .frameFour {
+    padding: 30px 80px 0 30px;
+  }
+  .frameTwo {
+    padding: 0 80px 30px 30px;
+    margin: 0 0;
+    font-size: 9px;
+    width: 100%;
+  }
+  footer {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .footer-content {
+    display: block;
+  }
+  .footerDot {
+    display: none;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .container {
     width: 95%;
     margin-top: 30px;
   }
   .main {
     height: 72vh;
+    grid-template-columns: 1fr;
   }
   .navbar {
     margin-bottom: 12px;
+  }
+  .frameOne,
+  .frameThree,
+  .frameFour {
+    padding: 10px 10px 0 10px;
+    font-size: 11px;
+  }
+  .frameTwo {
+    padding: 0 10px 8px 10px;
+  }
+}
+@media (max-width: 300px) {
+  .container {
+    width: 97%;
+    margin-top: 5px;
+  }
+  .shpLogo {
+    width: 181px;
+    height: 18px;
+  }
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+  p,
+  footer {
+    font-size: 9px;
+  }
+  .frameOne,
+  .frameThree,
+  .frameFour {
+    padding: 6px 0 0 6px;
+  }
+  .frameTwo {
+    padding: 0 6px 6px 6px;
   }
 }
