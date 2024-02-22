@@ -165,13 +165,36 @@ footer {
     height: 72vh;
     grid-template-columns: 3fr 1fr;
   }
-  .navbar-nav {
-    margin-top: 15px;
-  }
-  .navbar-nav .nav-link {
-    display: flex;
-    justify-content: end;
-    margin-right: 20px;
+  @media (max-width: 1050px) {
+    .container {
+      width: 83%;
+      margin-top: 80px;
+    }
+
+    .main {
+      height: 72vh;
+      grid-template-columns: 3fr 1fr;
+    }
+
+    .navbar-nav {
+      margin-top: -8px;
+      margin-right: 8px;
+    }
+    .navbar-collapse {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .navbar-nav .nav-link {
+      background-color: var(--linkColor);
+      padding: 40px 20px 10px 80px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .dura {
+      padding-bottom: 40px !important;
+    }
   }
   p {
     font-size: 11px;
@@ -200,6 +223,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+  body {
+    background-image: url(images/ShinyMonster-mobil.jpg);
+    background-position: right;
+  }
   .container {
     width: 95%;
     margin-top: 30px;
