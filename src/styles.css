@@ -32,8 +32,8 @@ body {
   background-color: transparent !important;
   border-color: transparent !important;
   margin: 0px auto;
-  margin-left: -10px;
-  margin-right: -20px;
+  margin-left: -12px;
+  margin-right: -42px;
   height: 60px;
   padding-top: 30px;
 }
@@ -41,6 +41,7 @@ body {
   color: white !important;
   font-size: 12px;
   line-height: 16px;
+  margin-right: 20px;
 }
 .nav-item {
   margin-bottom: -10px;
@@ -101,7 +102,8 @@ a {
 .frameOne,
 .frameTwo,
 .frameThree,
-.frameFour {
+.frameFour,
+.contact-button {
   grid-column: 1 / 2;
 }
 
@@ -119,35 +121,18 @@ a {
 .frameFour {
   width: 82%;
 }
-form,
-.btn {
+.contact-button {
   font-size: 8px;
-  line-height: 14px;
+  width: 65%;
+  background-color: transparent;
   color: white;
+  border: var(--border);
+  margin-top: 20px;
+  padding: 10px 10px;
+  font-family: "Red Hat Mono", monospace;
   letter-spacing: 0.25em;
-}
-.btn {
   text-transform: uppercase;
-  margin: 20px 0 0 -12px;
 }
-.form-control {
-  padding: 10px;
-  height: 35px;
-  color: white !important;
-  font-size: 14px;
-}
-.form-control:focus {
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: none !important;
-}
-.no-background {
-  background-color: transparent !important;
-  border: none;
-  border-bottom: var(--border);
-  border-radius: 0;
-}
-
 footer {
   margin: 8px auto;
   font-size: 10px;
@@ -156,46 +141,17 @@ footer {
 .footer-content {
   display: flex;
 }
+
 @media (max-width: 1050px) {
   .container {
     width: 83%;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .main {
-    height: 72vh;
+    height: 65vh;
     grid-template-columns: 3fr 1fr;
   }
-  @media (max-width: 1050px) {
-    .container {
-      width: 83%;
-      margin-top: 80px;
-    }
 
-    .main {
-      height: 72vh;
-      grid-template-columns: 3fr 1fr;
-    }
-
-    .navbar-nav {
-      margin-top: -8px;
-      margin-right: 8px;
-    }
-    .navbar-collapse {
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .navbar-nav .nav-link {
-      background-color: var(--linkColor);
-      padding: 40px 20px 10px 80px;
-      margin-left: 10px;
-      display: flex;
-      justify-content: flex-end;
-    }
-    .dura {
-      padding-bottom: 40px !important;
-    }
-  }
   p {
     font-size: 11px;
   }
@@ -222,33 +178,62 @@ footer {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   body {
     background-image: url(images/ShinyMonster-mobil.jpg);
     background-position: right;
   }
   .container {
     width: 95%;
-    margin-top: 30px;
+    margin-top: 25px;
   }
   .main {
-    height: 72vh;
-    grid-template-columns: 1fr;
+    height: 65vh;
   }
   .navbar {
-    margin-bottom: 12px;
+    margin: 0 -21px 10px -9px;
+  }
+  .navbar-nav {
+    margin-top: -8px;
+    margin-right: 8px;
+  }
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-nav .nav-link {
+    background-color: var(--linkColor);
+    padding: 40px 20px 10px 80px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-nav .nav-link .dura {
+    padding-bottom: 40px !important;
+  }
+  .frameTwo {
+    padding: 0 10px 8px 10px;
+  }
+}
+@media (max-width: 750px) {
+  .main {
+    grid-template-columns: 1fr;
   }
   .frameOne,
   .frameThree,
   .frameFour {
     padding: 10px 10px 0 10px;
     font-size: 11px;
+    width: 100%;
   }
-  .frameTwo {
-    padding: 0 10px 8px 10px;
+  .contact-button {
+    font-size: 11px;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 338px) {
   .container {
     width: 97%;
     margin-top: 5px;
