@@ -5,15 +5,21 @@
 }
 
 body {
-  background-image: url(images/ShinyMonster.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   font-family: "Red Hat Mono", monospace;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   overflow: hidden;
+}
+.bg-with-image {
+  background-image: url(images/ShinyMonster.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-with-color {
+  background-color: #7d2d49;
+  background-image: none;
 }
 .container {
   width: 80%;
@@ -37,7 +43,6 @@ body {
   margin-left: -12px;
   margin-right: -42px;
   height: 60px;
-  padding-top: 30px;
 }
 .navbar-nav .nav-link {
   color: white !important;
@@ -45,12 +50,13 @@ body {
   line-height: 16px;
   margin-right: 20px;
 }
-.nav-item {
-  margin-bottom: -10px;
+.nav-link {
+  margin-bottom: 9px;
 }
 .shpLogo {
   width: 227px;
   height: 22px;
+  margin-bottom: -16px;
 }
 .nav-link:hover {
   color: var(--linkColor) !important;
@@ -135,6 +141,17 @@ a {
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-top: 40px;
+}
+li {
+  color: white;
+  font-size: 12px !important;
+  padding: 20px 0;
+}
 footer {
   margin: 8px auto;
   font-size: 10px;
@@ -152,21 +169,25 @@ footer {
   .main,
   .main-landing {
     height: 65vh;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr;
   }
-
   p {
     font-size: 11px;
   }
+  .navbar-toggler-icon {
+    margin-bottom: -16px;
+  }
   .frameOne,
+  .frameTwo,
   .frameThree,
   .frameFour {
-    padding: 30px 80px 0 30px;
+    width: 80%;
   }
   .frameTwo {
-    padding: 0 80px 30px 30px;
-    margin: 0 0;
+    padding: 0 42px 35px 42px;
     font-size: 9px;
+  }
+  .full-width {
     width: 100%;
   }
   footer {
@@ -190,24 +211,7 @@ footer {
     height: 68vh;
   }
   .navbar {
-    margin: 0 -21px 15px -9px;
-  }
-  .navbar-nav .nav-link {
-    background-color: var(--menuColor);
-    padding: 50px;
-    margin: 0 5px;
-    text-align: center;
-  }
-  .nav-link.dura {
-    padding: 50px;
-  }
-  .nav-link:hover {
-    color: white !important;
-  }
-
-  .shpLogo {
-    width: 239px;
-    height: 23px;
+    margin: 0 -21px 0 -9px;
   }
   .frameOne,
   .frameThree,
@@ -241,6 +245,10 @@ footer {
   }
   .main {
     background-color: rgba(0, 0, 0, 0.8);
+  }
+  .shpLogo {
+    width: 239px;
+    height: 23px;
   }
   .frameOne,
   .frameThree,

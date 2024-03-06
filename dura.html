@@ -24,7 +24,7 @@
 
     <title>Shiny Happy People</title>
   </head>
-  <body>
+  <body id="body" class="bg-with-image">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -36,6 +36,7 @@
           /></a>
           <button
             class="navbar-toggler"
+            id="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -62,24 +63,28 @@
                 <a class="nav-link" href="vibah.html">VI BAH’</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link dura" href="#">MEN DU´RA</a>
+                <a class="nav-link" href="#">MEN DU´RA</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="main">
-        <div class="frameFour">
-          <h2>MEN DU´RA?</h2>
-          <p>
-            Nog om oss. Du är viktigare. Något du undrar över? Kanske om vi kan
-            hjälpa dig bli sådär enormt framgångsrik? Skriv några rader.
-          </p>
-          <a href="mailto:info@shinyhappypeople.se">
-            <button class="contact-button">
-              Klicka här för omåttlig framgång
-            </button>
-          </a>
+        <div class="frameFour frames">
+          <div class="menu"></div>
+          <div class="paragraph">
+            <h2>MEN DU´RA?</h2>
+            <p>
+              Nog om oss. Du är viktigare. Något du undrar över? Kanske om vi
+              kan hjälpa dig bli sådär enormt framgångsrik? Skriv några rader.
+            </p>
+
+            <a href="mailto:info@shinyhappypeople.se">
+              <button class="contact-button">
+                Klicka här för omåttlig framgång
+              </button>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -102,5 +107,6 @@
         </div>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

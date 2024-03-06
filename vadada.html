@@ -24,7 +24,7 @@
 
     <title>Shiny Happy People</title>
   </head>
-  <body>
+  <body id="body" class="bg-with-image">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -36,6 +36,7 @@
           /></a>
           <button
             class="navbar-toggler"
+            id="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -62,23 +63,26 @@
                 <a class="nav-link" href="vibah.html">VI BAH’</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link dura" href="dura.html">MEN DU´RA</a>
+                <a class="nav-link" href="dura.html">MEN DU´RA</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="main">
-        <div class="frameOne">
-          <h2>VADÅDÅ?</h2>
-          <p>
-            Våra kunder är lika varierande som våra humörsvängningar.
-            <br />
-            <br />
-            Bookbeat / ka-yo / mando diao / fujifilm / benify / carotte /
-            presskontakterna / alline agency / Mora contract manufacturing / fm
-            matTsson / hotel kung carl / noppes /...och många fler
-          </p>
+        <div class="frameOne frames">
+          <div class="menu"></div>
+          <div class="paragraph">
+            <h2>VADÅDÅ?</h2>
+            <p>
+              Våra kunder är lika varierande som våra humörsvängningar.
+              <br />
+              <br />
+              Bookbeat / ka-yo / mando diao / fujifilm / benify / carotte /
+              presskontakterna / alline agency / Mora contract manufacturing /
+              fm matTsson / hotel kung carl / noppes /...och många fler
+            </p>
+          </div>
         </div>
       </div>
 
@@ -101,5 +105,6 @@
         </div>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
