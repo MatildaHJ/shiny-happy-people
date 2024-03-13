@@ -45,7 +45,9 @@ body {
   margin-right: 20px;
   margin-bottom: -32px;
 }
-
+.nav-item.start {
+  display: none !important;
+}
 .shpLogo {
   width: 227px;
   height: 22px;
@@ -141,7 +143,7 @@ footer {
 @media (max-width: 1050px) {
   .container {
     width: 83%;
-    margin-top: 55px;
+    margin-top: 45px;
   }
   .main,
   .main-landing {
@@ -151,8 +153,14 @@ footer {
   p {
     font-size: 11px;
   }
-  .navbar-toggler-icon {
-    margin-bottom: -16px;
+  .navbar {
+    margin: 0 -21px 15px -9px;
+  }
+  .navbar-nav {
+    margin-right: -18px;
+  }
+  .nav-link:hover {
+    color: white !important;
   }
   .frameOne,
   .frameThree,
@@ -176,7 +184,7 @@ footer {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 996px) {
   .container {
     width: 80%;
   }
@@ -184,8 +192,26 @@ footer {
   .main-landing {
     height: 68vh;
   }
+  .navbar-toggler-icon {
+    margin-bottom: -16px;
+  }
   .navbar {
     margin: 0 -21px 0 -9px;
+  }
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-nav .nav-link {
+    background-color: var(--linkColor);
+    padding: 40px 25px 40px 100px;
+    margin-right: 27px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-item.start {
+    display: block !important;
   }
   .frameOne,
   .frameThree,
@@ -240,7 +266,7 @@ footer {
     margin: 0 auto;
     margin-top: 70px;
     font-size: 14px;
-    width: 50%;
+    width: 180px;
   }
 }
 @media (max-width: 338px) {
