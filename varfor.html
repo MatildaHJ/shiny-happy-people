@@ -24,7 +24,7 @@
 
     <title>Shiny Happy People</title>
   </head>
-  <body>
+  <body id="body" class="bg-with-image">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -36,6 +36,7 @@
           /></a>
           <button
             class="navbar-toggler"
+            id="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -50,9 +51,6 @@
             id="navbarNav"
           >
             <ul class="navbar-nav">
-              <li class="nav-item start">
-                <a class="nav-link" href="index.html">Start</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">VARFÖR</a>
               </li>
@@ -70,9 +68,10 @@
         </div>
       </nav>
       <div class="main">
-        <div class="frameOne">
-          <div>
-            <h2>VARFÖR?</h2>
+        <div class="frameOne frames">
+          <div class="menu"></div>
+          <div class="paragraph">
+            <h2 class="header">VARFÖR?</h2>
             <p>
               Att hitta på kul och fina idéer är ju det bästa som finns. Eller
               “skapa” som man säger på konstfack. Att vi sedan inte riktigt kan
@@ -110,5 +109,6 @@
         </div>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

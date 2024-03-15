@@ -24,7 +24,8 @@
 
     <title>Shiny Happy People</title>
   </head>
-  <body>
+
+  <body id="body" class="bg-with-image">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -36,6 +37,7 @@
           /></a>
           <button
             class="navbar-toggler"
+            id="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -50,9 +52,6 @@
             id="navbarNav"
           >
             <ul class="navbar-nav">
-              <li class="nav-item start">
-                <a class="nav-link" href="index.html">Start</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="varfor.html"
                   >VARFÖR</a
@@ -72,8 +71,9 @@
         </div>
       </nav>
       <div class="main">
-        <div class="frameThree">
-          <div>
+        <div class="frameThree frames">
+          <div class="menu"></div>
+          <div class="paragraph">
             <h2>VI BAH’</h2>
             <p>
               Oss hittar du på Kungstensgatan 23A i stockholm. Kom hit och hälsa
@@ -87,7 +87,6 @@
               lasse@shinyhappypeople.se <br />
               0705-53 78 30
             </p>
-
             <p>
               <strong>daniel olsén</strong>
               <br />
@@ -124,5 +123,6 @@
         </div>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

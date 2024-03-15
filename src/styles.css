@@ -10,10 +10,17 @@ body {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   overflow: hidden;
+}
+.bg-with-image {
   background-image: url(images/ShinyMonster.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: black;
+}
+.bg-with-color {
+  background-color: #7d2d49;
+  background-image: none;
 }
 .container {
   width: 80%;
@@ -43,15 +50,14 @@ body {
   font-size: 12px;
   line-height: 16px;
   margin-right: 20px;
-  margin-bottom: -32px;
 }
-.nav-item.start {
-  display: none !important;
+.nav-link {
+  margin-bottom: 9px;
 }
 .shpLogo {
   width: 227px;
   height: 22px;
-  margin-bottom: -18px;
+  margin-bottom: -16px;
 }
 .nav-link:hover {
   color: var(--linkColor) !important;
@@ -63,7 +69,6 @@ body {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
   margin-right: -7px;
 }
-
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler-icon:active {
@@ -75,7 +80,7 @@ h2 {
   font-size: 14px;
   font-weight: 400;
   color: white;
-  margin: 5px 0;
+  margin: 6px 0;
 }
 p,
 footer {
@@ -132,6 +137,17 @@ a {
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-top: 40px;
+}
+li {
+  color: white;
+  font-size: 12px !important;
+  padding: 20px 0;
+}
 footer {
   margin: 8px auto;
   font-size: 10px;
@@ -143,33 +159,29 @@ footer {
 @media (max-width: 1050px) {
   .container {
     width: 83%;
-    margin-top: 45px;
+    margin-top: 55px;
   }
   .main,
   .main-landing {
     height: 65vh;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr;
   }
   p {
     font-size: 11px;
   }
-  .navbar {
-    margin: 0 -21px 15px -9px;
-  }
-  .navbar-nav {
-    margin-right: -18px;
-  }
-  .nav-link:hover {
-    color: white !important;
+  .navbar-toggler-icon {
+    margin-bottom: -16px;
   }
   .frameOne,
   .frameThree,
   .frameFour {
-    padding: 30px 32px 0 32px;
+    width: 73%;
   }
   .frameTwo {
-    margin: 0 0 32px 32px;
+    padding: 0 20px 20px 20px;
     font-size: 9px;
+  }
+  .full-width {
     width: 100%;
   }
   footer {
@@ -183,7 +195,6 @@ footer {
     display: none;
   }
 }
-
 @media (max-width: 996px) {
   .container {
     width: 80%;
@@ -192,36 +203,14 @@ footer {
   .main-landing {
     height: 68vh;
   }
-  .navbar-toggler-icon {
-    margin-bottom: -16px;
-  }
   .navbar {
     margin: 0 -21px 0 -9px;
-  }
-  .navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .navbar-nav .nav-link {
-    background-color: var(--linkColor);
-    padding: 40px 25px 40px 100px;
-    margin-right: 27px;
-    margin-top: 4px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .nav-item.start {
-    display: block !important;
   }
   .frameOne,
   .frameThree,
   .frameFour {
     margin-left: 2px;
     margin-top: -1px;
-  }
-  .frameTwo {
-    margin: 0 15px 10px 14px;
-    width: 93%;
   }
   h2 {
     margin-top: -1px;
@@ -259,14 +248,16 @@ footer {
     width: 100%;
   }
   .frameTwo {
-    padding: 0;
+    padding: 0 12px 10px 14px;
+    margin: 0;
+    width: 100%;
   }
   .contact-button {
     display: block;
     margin: 0 auto;
     margin-top: 70px;
     font-size: 14px;
-    width: 180px;
+    width: 50%;
   }
 }
 @media (max-width: 338px) {
