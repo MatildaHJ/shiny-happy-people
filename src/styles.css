@@ -233,9 +233,7 @@ footer {
   .main-landing {
     grid-template-columns: 1fr;
   }
-  .main {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+
   .shpLogo {
     width: 239px;
     height: 23px;
