@@ -257,7 +257,8 @@ footer {
     margin: 0 auto;
     margin-top: 70px;
     font-size: 14px;
-    width: 50%;
+    width: 159px;
+    padding: 6px;
   }
 }
 @media (max-width: 338px) {
