@@ -127,7 +127,7 @@ a {
 }
 .contact-button {
   font-size: 8px;
-  width: 65%;
+  width: 150px;
   background-color: transparent;
   color: white;
   border: var(--border);
@@ -147,6 +147,9 @@ li {
   color: white;
   font-size: 12px !important;
   padding: 20px 0;
+}
+.popup {
+  display: none;
 }
 footer {
   margin: 8px auto;
@@ -291,5 +294,24 @@ footer {
     padding: 0 6px 6px 6px;
   }
 }
-@media (max-height: 450px) {
+
+@media (max-height: 450px) and (orientation: landscape) {
+  .popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 95vw;
+    height: 90vh;
+    transform: translate(-50%, -50%);
+    background-color: var(--linkColor);
+    color: white;
+    font-size: 16px;
+    padding: 40px;
+    border: var(--border);
+    z-index: 9999;
+    text-align: center;
+  }
 }
