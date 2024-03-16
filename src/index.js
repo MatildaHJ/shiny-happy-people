@@ -13,7 +13,6 @@ function showMenu(event) {
   body.classList.toggle("bg-with-image");
   body.classList.toggle("bg-with-color");
 
-  let mainLanding = document.querySelector(".main-landing");
   let main = document.querySelector(".main");
   let menuDiv = document.querySelector(".menu");
   let frames = document.querySelector(".frames");
