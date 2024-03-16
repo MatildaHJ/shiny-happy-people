@@ -13,11 +13,15 @@ function showMenu(event) {
   body.classList.toggle("bg-with-image");
   body.classList.toggle("bg-with-color");
 
+  let mainLanding = document.querySelector(".main-landing");
+  let main = document.querySelector(".main");
   let menuDiv = document.querySelector(".menu");
   let frames = document.querySelector(".frames");
   let paragraphs = document.querySelectorAll(".paragraph");
 
   frames.classList.toggle("full-width");
+
+  let currentPage = window.location.pathname;
 
   if (body.classList.contains("bg-with-color")) {
     paragraphs.forEach((paragraph) => {
@@ -25,11 +29,21 @@ function showMenu(event) {
     });
     menuDiv.innerHTML =
       '<ul><li><a href="../index.html">Start</a></li><li><a href="../varfor.html">Varför</a></li><li><a href="../vadada.html">Vadådå</a></li><li><a href="../vibah.html">Vi Bah’</a></li><li><a href="../dura.html">Men Du´ra</a></li></ul>';
+    main.style.backgroundColor = "rgba(0, 0, 0, 0)";
   } else {
     paragraphs.forEach((paragraph) => {
       paragraph.innerHTML = originalContents[paragraph.id];
     });
     menuDiv.innerHTML = "";
+
+    if (
+      currentPage.includes("varfor.html") ||
+      currentPage.includes("vadada.html") ||
+      currentPage.includes("vibah.html") ||
+      currentPage.includes("dura.html")
+    ) {
+      main.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    }
   }
 }
 
